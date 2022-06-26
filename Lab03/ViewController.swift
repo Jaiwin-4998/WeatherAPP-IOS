@@ -105,7 +105,8 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
         }
 
         //Step 1: get URL
-        let url = getUrl(search: search)
+        //let url = getUrl(search: search)
+        let url = getUrl(search: search.trimmingCharacters(in: .whitespacesAndNewlines))
         
         guard let url = url else {
             print("Could not get URL")

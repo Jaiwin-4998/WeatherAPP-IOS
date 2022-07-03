@@ -207,7 +207,7 @@ class ViewController: UIViewController, UITextFieldDelegate, CLLocationManagerDe
     private func getUrl(search: String) -> URL? {
         let baseUrl = "https://api.weatherapi.com/v1/"
         let currentEndPoint = "current.json"
-        let apiKey = "b7cae27ca55b473facb181610220104"
+        let apiKey = "/#"
         
         
         let url = "\(baseUrl)\(currentEndPoint)?key=\(apiKey)&q=\(search)"
